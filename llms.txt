@@ -1,0 +1,20 @@
+# BerryBox Skills
+
+> Agent skills that make GitHub Actions faster and cheaper. The faster-ci skill measures a baseline from recent runs with the gh CLI, matches the bottlenecks to the BerryBox Playbooks, applies the plays the user approves on a new branch, and proves the saving in a pull request.
+
+## Skills
+
+- [faster-ci](https://raw.githubusercontent.com/strawberry-labs/berrybox-skills/main/skills/faster-ci/SKILL.md): the skill: rules and workflow
+- [ci_baseline.py](https://raw.githubusercontent.com/strawberry-labs/berrybox-skills/main/skills/faster-ci/scripts/ci_baseline.py): read-only GitHub Actions baseline (wall time, queue time, runner minutes, critical path, required checks)
+- [Report templates](https://raw.githubusercontent.com/strawberry-labs/berrybox-skills/main/skills/faster-ci/references/report.md): the proposal table and pull request description
+
+## Playbooks
+
+- [BerryBox Playbooks](https://berrybox.io/playbooks.md): the copy-paste prompt and the index of every playbook and play
+- [Playbooks for agents](https://berrybox.io/llms.txt): every playbook page as Markdown
+
+## Install
+
+- Any agent: `npx skills add strawberry-labs/berrybox-skills`
+- Claude Code: `/plugin marketplace add strawberry-labs/berrybox-skills`, then `/plugin install berrybox@berrybox-skills`
+- By hand: copy `skills/faster-ci` into `.claude/skills/` (Claude Code) or `.agents/skills/` (Codex, Cursor, OpenCode, Gemini CLI, GitHub Copilot)

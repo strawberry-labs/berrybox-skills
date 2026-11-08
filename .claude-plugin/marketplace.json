@@ -1,0 +1,20 @@
+{
+  "name": "berrybox-skills",
+  "owner": {
+    "name": "Strawberry Labs LLC",
+    "email": "admin@strawberrylabs.net"
+  },
+  "metadata": {
+    "description": "BerryBox agent skills for faster, cheaper GitHub Actions",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "berrybox",
+      "description": "Measure GitHub Actions from recent runs, apply the BerryBox Playbooks you approve on a new branch, and prove the saving in a pull request",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/faster-ci"]
+    }
+  ]
+}
