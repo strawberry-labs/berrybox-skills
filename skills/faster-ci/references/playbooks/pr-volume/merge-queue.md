@@ -84,5 +84,5 @@ Merge queues are available for public repositories owned by organizations and fo
 
 - GitHub: [GitHub blog: replace deploy trains with a merge queue for the GitHub.com monorepo](https://github.blog/engineering/engineering-principles/how-github-uses-merge-queue-to-ship-hundreds-of-changes-every-day/). The average wait time to ship a change was reduced by 33%.
 - Shopify: [Shopify Engineering: batch queued pull requests, test only the next three batches and tolerate flaky failures](https://shopify.engineering/successfully-merging-work-1000-developers)
-- Uber: [Uber blog: prioritize the speculative merge queue builds most likely to be needed](https://www.uber.com/us/en/blog/slashing-ci-costs-at-uber/)
+- Uber: [Uber blog: prioritize the speculative merge queue builds most likely to be needed](https://www.uber.com/us/en/blog/slashing-ci-costs-at-uber/). Across Uber's Go, iOS and Android monorepos, CI resource usage fell by 53% and wait times by 37%.
 - Ramp: [Ramp Builders: drop the up-to-date requirement and gate deploys on main instead](https://builders.ramp.com/post/merge-queues). The average time to merge decreased from over an hour to 12 minutes, the length of one test run.
